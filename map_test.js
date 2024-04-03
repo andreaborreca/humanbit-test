@@ -13,7 +13,6 @@ let geojson;
 let zones = $('#map').data('zones');
 let selected_zones = $('#map').data('selected-zones');
 let budget = $('#map').data('budget');
-let count_help = 0;
 
 //definizione variabile di controllo per il click delle zone
 
