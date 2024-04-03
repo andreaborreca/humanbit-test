@@ -1,12 +1,3 @@
-
-let marker;
-let circle;
-let search_on = 0;
-let lng;
-let lat;
-let zoneOut = [];
-let zoneIn = []; 
-
 //definizione variabile di controllo per il click delle zone
 
 let zoneClicked;
