@@ -7,12 +7,6 @@ let lng;
 let lat;
 let zoneOut = [];
 let zoneIn = [];
-let nameZone = [];
-let deleteButton;
-let geojson;
-let zones = $('#map').data('zones');
-let selected_zones = $('#map').data('selected-zones');
-let budget = $('#map').data('budget');
 
 //definizione variabile di controllo per il click delle zone
 
