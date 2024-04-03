@@ -6,7 +6,7 @@ let search_on = 0;
 let lng;
 let lat;
 let zoneOut = [];
-let zoneIn = [];
+let zoneIn = []; 
 
 //definizione variabile di controllo per il click delle zone
 
