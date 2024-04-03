@@ -16,19 +16,7 @@ function checkZones(){
     return 0;
 }
 
-//funzione di aggiunta trigger degli eventi sui layer delle zone
-
-function onEachFeature(feature, layer) {
-    layer.bindTooltip('<p>'+ feature.properties.name + '</p>');
-    layer.setStyle({className: 'zone'});
-    for(i=0; i< zones.length; i++){
-        let zone_name = zones[i].substr(0, zones[i].indexOf('/'));
-        if(feature.properties.name == zone_name){
-            let zone_price = zones[i].substring(zones[i].indexOf('/') + 1);
-            layer.feature.properties.budget = zone_price;
-            if(zoneOut.includes(zone_name)){
-                let text = $(".zone_out_label").text();
-                layer.setStyle({className: 'rosso grigio'});
+sName: 'rosso grigio'});
                 layer.feature.properties.color = 'rosso';
                 layer.bindTooltip('<p>'+ feature.properties.name + ': ' + zone_price + '€ - <span class="me-2" style="font-size:14px;color:#035567;font-weight:bold;"><i class="fa-regular fa-circle-info" style="font-size:14px;"></i></i></i></span><span style="font-size:14px;color:#035567;font-weight:bold;">' + text + '</span></p>');
             } else if(budget < zone_price){
