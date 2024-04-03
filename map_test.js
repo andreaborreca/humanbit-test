@@ -1,4 +1,3 @@
-//definizione variabili di controllo per la ricerca di un indirizzo
 
 let marker;
 let circle;
