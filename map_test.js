@@ -1,10 +1,8 @@
 //definizione variabile di controllo per il click delle zone
 
-let zoneClicked;
-
 //funzione di ricerca dei bottoni delle zone per inizializzazione
 
-sName: 'rosso grigio'});
+sName: 'rosso grigio'});dsdsadsadsadsasdasd
                 layer.feature.properties.color = 'rosso';
                 layer.bindTooltip('<p>'+ feature.properties.name + ': ' + zone_price + '€ - <span class="me-2" style="font-size:14px;color:#035567;font-weight:bold;"><i class="fa-regular fa-circle-info" style="font-size:14px;"></i></i></i></span><span style="font-size:14px;color:#035567;font-weight:bold;">' + text + '</span></p>');
             } else if(budget < zone_price){
