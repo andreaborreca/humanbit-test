@@ -1,0 +1,31 @@
+services:
+  laravel-docker:
+    container_name: laravel-docker-app
+    build: .
+    volumes:
+      - ./src:/var/www/html
+    ports:
+      - 8000:80
+  db:
+    container_name: db
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: Pinomarino1.
+      MYSQL_USER: pino
+      MYSQL_PASSWORD: p1no666.
+    volumes:
+      - db-data:/var/lib/mysql
+    ports:
+      - 3306:3306
+  phpmyadmin:
+    container_name: phpmyadmin
+    image: phpmyadmin/phpmyadmin
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+      MYSQL_ROOT_PASSWORD: Pinomarino1.
+    ports:
+      - 8080:80
+    depends_on:
+      - db
